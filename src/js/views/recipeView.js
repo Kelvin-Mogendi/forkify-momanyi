@@ -125,7 +125,7 @@ class RecipeView extends Views {
             <use href="${icons}#icon-check"></use>
           </svg>
           <div class="recipe__quantity">${
-            el.quantity ? el.quantity.toString() : ''
+            el.quantity ? fracty(el.quantity.toString()) : ''
           }</div>
           <div class="recipe__description">
             <span class="recipe__unit">${el.unit}</span>${el.description}
